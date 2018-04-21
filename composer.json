@@ -1,0 +1,23 @@
+{
+    "name": "atico/spreadsheet-translator-reader-matrix",
+    "license": "MIT",
+    "type": "library",
+    "description": "Spreadsheet Translator - Reader matrix",
+    "autoload": {
+        "psr-4": {
+            "Atico\\SpreadsheetTranslator\\Reader\\Matrix\\": "./src"
+        }
+    },
+    "repositories": [{
+        "type": "path",
+        "url": "../../Core",
+        "options": {
+            "symlink": true
+        }
+    }],
+    "require": {
+        "atico/spreadsheet-translator-core": "^1.0",
+        "php": ">=5.5.9",
+        "guzzlehttp/guzzle": "6.2.2"
+    }
+}
