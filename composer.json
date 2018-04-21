@@ -2,7 +2,7 @@
     "name": "atico/spreadsheet-translator-reader-matrix",
     "license": "MIT",
     "type": "library",
-    "description": "Spreadsheet Translator - Reader matrix",
+    "description": "Spreadsheet Translator - Library that reads multi dimensional array and returns a 2-dimensional array",
     "autoload": {
         "psr-4": {
             "Atico\\SpreadsheetTranslator\\Reader\\Matrix\\": "./src"
