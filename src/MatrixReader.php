@@ -30,9 +30,9 @@ class MatrixReader extends AbstractArrayReader implements ReaderInterface
         return $this->sheets;
     }
 
-    public function getTitle($index)
+    public function getSheetNames()
     {
-        return array_values($this->sheets)[$index];
+        return array_keys($this->sheets);
     }
 
     public function getData($sheet)
@@ -49,5 +49,10 @@ class MatrixReader extends AbstractArrayReader implements ReaderInterface
             throw SheetNameNotFound::create($name);
         }
         return $this->sheets[$name];
+    }
+
+    public function getTitle($index)
+    {
+        return array_values($this->sheets)[$index];
     }
 }
