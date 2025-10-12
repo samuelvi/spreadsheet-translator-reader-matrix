@@ -1,5 +1,5 @@
 {
-    "name": "atico/spreadsheet-translator-reader-matrix",
+    "name": "samuelvi/spreadsheet-translator-reader-matrix",
     "license": "MIT",
     "type": "library",
     "description": "Spreadsheet Translator - Library that reads multi dimensional array and returns a 2-dimensional array",
@@ -16,7 +16,11 @@
         }
     }],
     "require": {
-        "atico/spreadsheet-translator-core": "^1.0",
-        "php": ">=5.5.9"
+        "samuelvi/spreadsheet-translator-core": "^1.0|^2.0|^8.0",
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "rector/jack": "^0.2.9",
+        "rector/rector": "^2.1"
     }
 }

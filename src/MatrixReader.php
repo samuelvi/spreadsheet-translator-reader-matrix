@@ -13,16 +13,15 @@ namespace Atico\SpreadsheetTranslator\Reader\Matrix;
 
 use Atico\SpreadsheetTranslator\Core\Reader\AbstractArrayReader;
 use Atico\SpreadsheetTranslator\Core\Reader\ReaderInterface;
-use Atico\SpreadsheetTranslator\Core\Exception\SheetNameNotFound;
+use Atico\SpreadsheetTranslator\Core\Exception\SheetNameNotFoundException;
 
 class MatrixReader extends AbstractArrayReader implements ReaderInterface
 {
-    /** @var $array $sheets */
-    protected $sheets;
-
-    function __construct($array)
+    function __construct(
+        /** @var $array $sheets */
+        protected $sheets
+    )
     {
-        $this->sheets = $array;
     }
 
     public function getSheets()
@@ -41,12 +40,12 @@ class MatrixReader extends AbstractArrayReader implements ReaderInterface
     }
 
     /**
-     * @throws SheetNameNotFound
+     * @throws SheetNameNotFoundException
      */
     public function getDataBySheetName($name)
     {
         if (!isset($this->sheets[$name])) {
-            throw SheetNameNotFound::create($name);
+            throw SheetNameNotFoundException::create($name);
         }
         return $this->sheets[$name];
     }
