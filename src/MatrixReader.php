@@ -17,10 +17,7 @@ use Atico\SpreadsheetTranslator\Core\Exception\SheetNameNotFoundException;
 
 class MatrixReader extends AbstractArrayReader implements ReaderInterface
 {
-    function __construct(
-        /** @var $array $sheets */
-        protected $sheets
-    )
+    function __construct(protected array $sheets)
     {
     }
 
