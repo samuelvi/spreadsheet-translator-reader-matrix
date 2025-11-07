@@ -14,7 +14,7 @@
         }
     },
     "require": {
-        "samuelvi/spreadsheet-translator-core": "dev-master",
+        "samuelvi/spreadsheet-translator-core": "^8.4",
         "php": ">=8.4"
     },
     "require-dev": {
