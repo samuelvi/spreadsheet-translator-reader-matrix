@@ -13,13 +13,6 @@
             "Atico\\SpreadsheetTranslator\\Reader\\Matrix\\Tests\\": "./tests"
         }
     },
-    "repositories": [{
-        "type": "path",
-        "url": "../../Core",
-        "options": {
-            "symlink": true
-        }
-    }],
     "require": {
         "samuelvi/spreadsheet-translator-core": "dev-master",
         "php": ">=8.4"
