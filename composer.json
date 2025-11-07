@@ -22,7 +22,7 @@
     }],
     "require": {
         "samuelvi/spreadsheet-translator-core": "dev-master",
-        "php": ">=8.1"
+        "php": ">=8.4"
     },
     "require-dev": {
         "rector/jack": "^0.2.9",
