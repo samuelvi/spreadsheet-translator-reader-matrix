@@ -13,8 +13,32 @@ Related
 Requirements
 ------------
 
-  * PHP >=8.1
+  * PHP >=8.4
 
+
+Static Analysis (Rector)
+------------
+
+This project uses <a href="https://github.com/rectorphp/rector">Rector</a> to ensure code quality and consistency. To run Rector, use the following command:
+
+```bash
+make rector
+```
+
+To perform a dry run (without making any changes), use:
+
+```bash
+make rector-dry
+```
+
+Testing
+------------
+
+To run the test suite, use the following command:
+
+```bash
+make test
+```
 
 Contributing
 ------------

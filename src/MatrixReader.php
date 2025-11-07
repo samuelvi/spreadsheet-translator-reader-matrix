@@ -21,12 +21,12 @@ class MatrixReader extends AbstractArrayReader implements ReaderInterface
     {
     }
 
-    public function getSheets()
+    public function getSheets(): array
     {
         return $this->sheets;
     }
 
-    public function getSheetNames()
+    public function getSheetNames(): array
     {
         return array_keys($this->sheets);
     }
